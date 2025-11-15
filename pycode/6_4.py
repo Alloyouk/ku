@@ -1,0 +1,5 @@
+a=input("请输入第一个数字：")
+b=input("请输入第二个数字：")
+c=input("请输入第三个数字：")
+s = sorted([a, b, c])
+print(f"从小到大排序: {s}")
