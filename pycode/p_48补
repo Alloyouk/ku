@@ -1,0 +1,23 @@
+import random
+target = random.randint(1,99)
+a=int(input('请输入你猜的数字'))
+if a<target:
+    print('你猜小了')
+    a=int(input('请重新输入：'))
+    if a<target:
+        print('你猜小了')
+    elif a>target:
+        print('你猜大了')
+    else:
+        print('congratulations')
+elif a>target:
+    print('你猜大了')
+    a=int(input('请重新输入：'))
+    if a<target:
+        print('你猜小了')
+    elif a>target:
+        print('你猜大了')
+    else:
+        print('congratulations')
+else:
+    print('congratulations')
